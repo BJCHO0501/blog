@@ -43,7 +43,7 @@ const TagsPage = ({ data }) => {
     }
 
     setFilteredPosts(
-      filter(posts, post => post.frontmatter.tags.indexOf(selected) !== -1)
+      filter(posts, post => post.frontmatter.tags.indexOf(selected) !== -1),
     )
   }, [selected])
 
@@ -68,18 +68,7 @@ const TagsPage = ({ data }) => {
           </Title>
         )}
 
-        <TagList
-          count
-          tagList={tags}
-          selected={selected}
-          onClick={tag => {
-            console.log(tag, selected)
-            if (tag === selected) {
-              navigate("/tags")
-              alert("zz")
-            } else setSelected(tag)
-          }}
-        />
+        <TagList count tagList={tags} selected={selected} />
       </TagListWrapper>
 
       <VerticleSpace size={32} />
