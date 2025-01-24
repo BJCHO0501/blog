@@ -8,12 +8,16 @@ const FooterWrapper = styled.footer`
   padding: 40px 0;
   border-top: 1px solid ${props => props.theme.colors.divider};
   text-align: center;
-  font-size: 11pt;
+  font-size: 14px;
   font-weight: lighter;
   color: ${props => props.theme.colors.secondaryText};
 
   & > a {
     color: ${props => props.theme.colors.text};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 11px;
   }
 `
 
