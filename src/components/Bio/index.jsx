@@ -44,6 +44,11 @@ const Profile = styled.div`
   background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `
 
 const Author = styled.div`
@@ -51,6 +56,10 @@ const Author = styled.div`
   font-size: 24px;
   font-weight: 700;
   color: ${props => props.theme.colors.text};
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `
 
 const Description = styled.div`
@@ -58,6 +67,11 @@ const Description = styled.div`
   line-height: 1.5;
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
 `
 
 const LinksWrapper = styled.div`
