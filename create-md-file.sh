@@ -36,9 +36,6 @@ cat <<EOL > "$file_path"
 # 게시글 제목
 title: ""
 
-# 게시글 설명
-description: ""
-
 # 작성 날짜
 date: $today_date
 
