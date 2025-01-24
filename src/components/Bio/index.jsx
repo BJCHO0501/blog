@@ -106,11 +106,16 @@ const Bio = () => {
     link,
   } = links
 
+  const emojiList = ["🎧", "📌", "💻", "🔖", "🍎", "👑", "🚀"]
+  const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)]
+
   return (
     <BioWrapper id="bio">
       <Profile />
       <div>
-        <Author>@{author}</Author>
+        <Author>
+          {randomEmoji} {author}
+        </Author>
         <Description>{description}</Description>
         <LinksWrapper>
           <Link link={github}>
