@@ -5,6 +5,10 @@ import { siteUrl } from "../../../blog-config"
 const SEO = ({ title, description, url }) => {
   return (
     <Helmet>
+      <meta
+        name="google-site-verification"
+        content="yHEQrvmCkp5vG_5UxZeRcIVHsNVx19QeUS8xWFkocJY"
+      />
       <title>{title}</title>
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
