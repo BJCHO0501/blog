@@ -11,6 +11,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://bjcho0501.github.io",
+        sitemap: "https://bjcho0501.github.io/blog/sitemap-index.xml",
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
+    },
     `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-react-redux`,
