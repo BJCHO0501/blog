@@ -2,7 +2,7 @@ module.exports = {
   title: "Cho's Blog",
   description: "이해한 내용을 기록합니다",
   author: "Cho",
-  siteUrl: "https://bjcho0501.github.io/blog/",
+  siteUrl: "https://bjcho0501.github.io",
   links: {
     github: "https://github.com/BJCHO0501",
     // linkedIn: "https://linkedin.com",
