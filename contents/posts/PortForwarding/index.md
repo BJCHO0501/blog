@@ -1,7 +1,7 @@
 ---
 title: 포트포워딩
-date: 2025-05-12
-update: 2025-05-12
+date: 2025-05-11
+update: 2025-05-11
 tags:
   - Network
 series: 혼자 공부하는 네트워크
