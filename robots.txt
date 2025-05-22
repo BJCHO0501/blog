@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://bjcho0501.github.io/blog/sitemap-index.xml
+Host: https://bjcho0501.github.io
