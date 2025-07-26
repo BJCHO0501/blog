@@ -57,6 +57,8 @@ typings/
 # gatsby files
 .cache/
 public
+!public/resume/
+!public/resume/**
 
 # Mac files
 .DS_Store
