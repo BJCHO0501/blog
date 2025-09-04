@@ -47,10 +47,10 @@ const BlogIndex = ({ data }) => {
           <ArticleTitle>{aboutPost.frontmatter.title}</ArticleTitle>
         </Wrapper>
         <Article.Body html={aboutPost.html} hideToc />
-        <Wrapper>
+        {/* <Wrapper>
           <Divider />
           <Comment />
-        </Wrapper>
+        </Wrapper> */}
       </Article>
     </Layout>
   )
