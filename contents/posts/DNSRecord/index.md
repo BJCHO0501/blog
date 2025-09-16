@@ -5,7 +5,6 @@ update: 2025-09-05
 tags:
   - DNS
   - DNS-Record
-series: ""
 ---
 DNS에 관련된 내용은 [여기](https://bjcho0501.github.io/blog/DNS/)에..
 
