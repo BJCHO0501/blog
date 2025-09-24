@@ -1,7 +1,7 @@
 ---
 title: Notion API의 이미지를 만료기간 없이 사용하고 성능 개선하기
 date: 2025-08-29
-update: 2025-08-29
+update: 2025-09-25
 tags:
   - Notion-API
 series:
@@ -107,7 +107,8 @@ function notionFileUrlGenerator(originUrl: string, resultID: string): string {
 
 ![26,909 -> 5,906으로 이미지 캐시 쓰기가 줄어든 모습](n-8.png)
 또한, 이미지 캐시 쓰기의 횟수가 26,909번에서 5,906번으로 약 **78.1%** 개선된 것을 확인할 수 있다.
-
+### + 한달 후 결과 (2025.09.25)
+![Image Cache Writes 1달 후 지표](n-10.png)
 ### 참고자료
 - https://velog.io/@soooee/%EB%85%B8%EC%85%98-API-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%AC%EC%9A%A9-%EC%8B%9C-URL-%EB%A7%8C%EB%A3%8C-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0
 - https://weezip.treefeely.com/post/weezip-use-notion-image
