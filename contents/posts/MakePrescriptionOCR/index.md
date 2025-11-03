@@ -104,7 +104,7 @@ let unAbleString = ["•", "합니다", "습니다", "마세요", "계산서", "
 // 필요없는 문장 필터링 진행
 let longStringFilterTexts = texts
 	.filter { text in
-		unAbleString.contains { word **in** text.contains(word) } == false
+		unAbleString.contains { word in text.contains(word) } == false
 	}
 ```
 #### 2. 공백 기준으로 문장 분리
@@ -124,9 +124,9 @@ let filterTexts = spliteTexts
 	// 문장 개수가 1개 이하 제거
 	.filter { $0.count > 1 }
 	// 숫자로만 이루어저 있는 문장 제거
-	.filter { $0.allSatisfy { $0.isNumber } == **false** }
+	.filter { $0.allSatisfy { $0.isNumber } == false }
 	// 첫 단어가 숫자인 문장 제거
-	.filter { $0.first!.isNumber == **false** }
+	.filter { $0.first!.isNumber == false }
 ```
 #### 4. 특수문자가 들어간 단어 제외 및 단위 제거
 괄호나 덧셈기호 같은 특수문자가 들어간 단어 제외, `파모시드정20mg`에서 `20mg` 같은 단위 제거
