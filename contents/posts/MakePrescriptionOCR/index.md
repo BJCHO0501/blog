@@ -64,7 +64,7 @@ iOS에서는 [VisionKit](https://developer.apple.com/documentation/visionkit)이
 let handler = VNImageRequestHandler(cgImage: cgImage)
 ```
 
-`VNRecognizeTextRequest`은 이미지에서 텍스트를 찾는 요청을 하기위한 객체로, 해당 객체를 사용해서 아까 설정한 `VNRecognizeTextRequest` 이미지의 택스트 분석 요청을 진행할 수 있다. 클로저를 사용하여 분석 결과를 반환하는데, 분석된 택스트의 위치(CGRect)와 분석 택스트를 받을 수 있다.
+`VNRecognizeTextRequest`은 이미지에서 텍스트를 찾는 요청을 하기위한 객체로, 해당 객체를 사용해서 위에서 설정한 `VNRecognizeTextRequest` 이미지의 텍스트 분석 요청을 진행할 수 있다. 클로저를 사용하여 분석 결과를 반환하는데, 분석된 텍스트의 위치(CGRect)와 분석 텍스트를 받을 수 있다.
 
 `VNRecognizeTextRequest`의 초기 설정으로 어떤 버전의 비전을 사용할건지, 어떤 언어를 분석할 것 인지 등을 설정할 수 있다. 자세한 내용은 [공식문서](https://developer.apple.com/documentation/vision/vnrecognizetextrequest)를 참고하였다.
 ``` swift
