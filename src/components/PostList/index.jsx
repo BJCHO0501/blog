@@ -36,6 +36,15 @@ const Excerpt = styled.p`
   font-size: 15px;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+    -webkit-line-clamp: 2;
+  }
 `
 
 const checkIsScrollAtBottom = () => {
@@ -86,7 +95,7 @@ const PostList = ({ postList }) => {
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
+              <Divider mt="48" mb="32" />
             )}
           </React.Fragment>
         )

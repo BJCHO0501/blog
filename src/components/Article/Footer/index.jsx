@@ -142,7 +142,7 @@ const Footer = ({ previous, next }) => {
 
       <Bio />
       <CommentWrapper>
-        <Divider mt="32px" />
+        <Divider mt="32" />
 
         <Comment />
       </CommentWrapper>

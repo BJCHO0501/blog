@@ -20,6 +20,11 @@ const ArticleTitle = styled.h1`
   font-size: 44.8px;
   font-weight: 700;
   color: ${props => props.theme.colors.text};
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
 `
 
 const Information = styled.div`

@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     padding: 0 15px;
   }
+
+  a {
+    word-break: break-all;
+  }
 `
 
 const Body = ({ html, hideToc }) => {

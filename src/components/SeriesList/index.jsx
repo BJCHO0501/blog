@@ -40,6 +40,7 @@ const Date = styled.p`
 
 const PostCount = styled.p`
   font-size: 14.4px;
+  white-space: nowrap;
 `
 
 const checkIsScrollAtBottom = () => {
@@ -90,7 +91,7 @@ const SeriesList = ({ seriesList }) => {
             </SeriesWrapper>
 
             {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
+              <Divider mt="48" mb="32" />
             )}
           </React.Fragment>
         )

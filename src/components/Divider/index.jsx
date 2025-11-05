@@ -2,10 +2,14 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const Divider = styled.hr`
-  margin-top: ${props => props.mt};
-  margin-bottom: ${props => props.mb};
+  margin-top: ${props => props.mt}px;
+  margin-bottom: ${props => props.mb}px;
   border: none;
   border-bottom: 1px solid ${props => props.theme.colors.divider};
+
+  @media (max-width: 768px) {
+    margin-top: ${props => (props.mt - 25 > 0 ? props.mt - 25 : 0)}px;
+  }
 `
 
 Divider.propTypes = {
@@ -14,8 +18,8 @@ Divider.propTypes = {
 }
 
 Divider.defaultProps = {
-  mt: "48px",
-  mb: "48px",
+  mt: "48",
+  mb: "48",
 }
 
 export default Divider

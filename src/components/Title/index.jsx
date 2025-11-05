@@ -3,11 +3,15 @@ import styled from "styled-components"
 
 const Wrapper = styled.h1`
   margin-bottom: 24px;
-  font-size: ${props => props.size};
+  font-size: ${props => props.size}px;
   font-weight: 700;
   line-height: 1.3;
   color: ${props => props.theme.colors.text};
   word-break: break-all;
+
+  @media (max-width: 768px) {
+    font-size: ${props => props.size - 5}px;
+  }
 
   & > a {
     text-decoration: none;
@@ -22,9 +26,9 @@ const Wrapper = styled.h1`
 
 const Title = ({ size, children }) => {
   const sizes = {
-    sm: "19.2px",
-    md: "25.6px",
-    bg: "32px",
+    sm: "19.2",
+    md: "25.6",
+    bg: "32",
   }
 
   return <Wrapper size={sizes[size]}> {children} </Wrapper>
